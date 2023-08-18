@@ -22,3 +22,5 @@ function showDate(event) {
     }
     let timezoneElement = document.querySelector("#timezone");
     timezoneElement.addEventListener("change", showTimezone);
+
+    
