@@ -4,10 +4,17 @@ select {
     border-radius: 4px;
     min-width:200px;
     margin: 15px 0;
+    text-align: center;
 }
 
 h2 {
     display: block;
     text-align: center;
     font-size: 65px;
+}
+
+p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
 }
