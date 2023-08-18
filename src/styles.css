@@ -1,13 +1,47 @@
 select {
-    display: block;
-    padding: 5px 8px;
-    border-radius: 4px;
-    min-width:200px;
-    margin: 15px 0;
-    text-align: center;
-}
+        display: block;
+        width: 100%;
+        font-size: 18px;
+        border-radius: 4px;
+        padding: 10px;
+      }
 
-h2 {
+.container {
+    max-width: 600px;
+    margin: 60px auto;
+    background: white;
+    padding: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+  }
+  .city {
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  }
+  
+  .city:last-child {
+    border: none;
+  }
+  
+  .date {
+    opacity: 0.7;
+  }
+  
+  .time {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .time small {
+    font-size: 24px;
+    vertical-align: middle;
+    line-height: 48px;
+  }
+
+h1 {
     display: block;
     text-align: center;
     font-size: 65px;
@@ -20,9 +54,9 @@ p {
 }
 
 .worldclock-app-wrapper {
-    max-width: 700px;
-    margin: 30px auto;
-    background-image: url("..//images/clock-time.jpg");
+    border: 1px solid white;
+    background: url("..//images/clock-time.jpg");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size:contain;
+    padding: 15px;
 }
