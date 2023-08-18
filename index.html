@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins:ital,wght@0,500;0,600;0,700;0,900;1,100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="src/styles.css"/>
     <title>World Clock</title>
 </head>
 <body>
@@ -26,16 +26,21 @@
                 <option value="sydney">🌏Sydney</option>
             </select>
     </div>
+    <script>
+    function showDate(event) {
+        if (event.target.value.length > 0) {
+          let currentTime = moment()
+            .tz(event.target.value)
+            .format("dddd, MMMM D, YYYY h:mm A");
 
+          alert(`It is ${currentTime} in ${event.target.value}`);
+        }
+      }
 
-
-
-
-
+      let selectElement = document.querySelector("#timezones");
+      selectElement.addEventListener("change", showDate);
+    </script>
 </div>
 
-
-
-<script src="src/script.js"></script>
 </body>
 </html>
