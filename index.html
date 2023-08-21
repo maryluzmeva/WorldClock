@@ -17,11 +17,12 @@
 <body>
 <div class="container">
     <div class="worldclock-app-wrapper">
-    <h1>World TimeZones</h1>
-        <div id="cities">
+        <h1>World TimeZones</h1>
+        <div id="cities-dropdown">
             <label for="timezones"><strong>What time it is?</strong></label>
                 <select name="timezones" id="timezones">
                     <option value="">Choose your city</option>
+                    <option value="current">Current City</option>
                     <option value="Europe/Paris">🥐Paris</option>
                     <option value="Asia/Tokyo">⛩️Tokyo</option>
                     <option value="Australia/Sydney">🌏Sydney</option>
@@ -29,22 +30,23 @@
         <br />
         <br />
         </div>
-        <div class="city">
+    <div id="cities">
+        <div class="city" id="tokyo">
             <h2>Tokyo</h2>
             <div class="date">August 18th 2023</div>
             <div class="time">1:48:15 AM</div>
         </div>
-        <div class="city">
+        <div class="city" id="paris">
             <h2>Paris</h2>
             <div class="date">August 18th 2023</div>
             <div class="time">1:48:15 AM</div>
         </div>
-        <div class="city">
+        <div class="city" id="Maui">
             <h2>Maui</h2>
             <div class="date">August 18th 2023</div>
             <div class="time">1:48:15 AM</div>
         </div>
-    
+    </div>
 
 
 
@@ -53,8 +55,9 @@
 
 <footer>
     <p id="author">
-      <a href="https://github.com/maryluzmeva/WorldClock" target="_blank">Open-source code</a>
-      by 👩‍💻 <a href="https://www.instagram.com/kurylaky.coding">Maryluz</a> | 
+        Coded by 👩‍💻 <a href="https://www.instagram.com/kurylaky.coding">Maryluz</a>
+      and is Open-source code on 
+        <a href="https://github.com/maryluzmeva/WorldClock" target="_blank">GitHub</a>
       Hosting in <a href="https://kurylaky-worldclock.netlify.app">Netlify</a>
     </p>
     <p id="image-background">Image Background: 
