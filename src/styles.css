@@ -1,13 +1,13 @@
 select {
         display: block;
-        width: 100%;
+        width: 90%;
         font-size: 18px;
         border-radius: 4px;
         padding: 10px;
       }
 
 .container {
-    max-width: 600px;
+    max-width: 700px;
     margin: 60px auto;
     background: white;
     padding: 30px;
@@ -15,11 +15,12 @@ select {
     border-radius: 10px;
   }
   .city {
-    display: flex;
+    display: block;
     margin: 10px 0;
     justify-content: space-between;
     padding: 30px 0;
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+    border-top: 1px dashed rgba(0, 0, 0, 0.2);
+    text-align: center;
   }
   
   .city:last-child {
@@ -54,9 +55,31 @@ p {
 }
 
 .worldclock-app-wrapper {
+    display: block;
+    margin: auto;
     border: 1px solid white;
-    background: url("..//images/clock-time.jpg");
+    background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
     background-repeat: no-repeat;
     background-size:contain;
     padding: 15px;
+}
+
+.card {
+  display: block;
+  text-align: center;
+  color:#ffff;
+  background: radial-gradient(circle at 10% 20%, rgb(0, 107, 141) 0%, rgb(0, 69, 91) 90%);
+  background-position: center;
+  transition: ease-in;
+
+}
+
+.card:hover {
+  transform: scale(1.15);
+}
+
+ul {
+  text-align: center;
+  padding-left: 0%;
+
 }
