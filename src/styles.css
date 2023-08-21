@@ -35,12 +35,6 @@ select {
     font-size: 48px;
     font-weight: bold;
   }
-  
-  .time small {
-    font-size: 24px;
-    vertical-align: middle;
-    line-height: 48px;
-  }
 
 h1 {
     display: block;
@@ -71,15 +65,8 @@ p {
   background: radial-gradient(circle at 10% 20%, rgb(0, 107, 141) 0%, rgb(0, 69, 91) 90%);
   background-position: center;
   transition: ease-in;
-
 }
 
 .card:hover {
   transform: scale(1.15);
-}
-
-ul {
-  text-align: center;
-  padding-left: 0%;
-
 }
