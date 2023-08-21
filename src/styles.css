@@ -68,20 +68,19 @@ p {
 }
 
 #chicago {
-  background: #044a42; 
-  color: #b8e1dd;
-}
-
-#honolulu {
   background: #3a9188; 
   color:#b8e1dd;
 }
 
 #tokyo {
+  background: #044a42; 
+  color: #b8e1dd;
+}
+
+#honolulu {
   background: #b8e1dd; 
   color:#062925;
 }
-
 .card {
   display: block;
   text-align: center;
