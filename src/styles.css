@@ -62,11 +62,30 @@ p {
   display: block;
   text-align: center;
   color:#ffff;
-  background: radial-gradient(circle at 10% 20%, rgb(0, 107, 141) 0%, rgb(0, 69, 91) 90%);
   background-position: center;
   transition: ease-in;
 }
 
 .card:hover {
   transform: scale(1.15);
+}
+
+#tokyo {
+  background-color:#b8e1dd;
+  color: #062925;
+}
+
+#berlin {
+  background-color: #3a9188;
+  color: #044a42;
+}
+
+#new-york {
+  background-color: #044a42;
+  color: #3a9188;
+}
+
+#honolulu {
+  background-color: #062925;
+  color:#b8e1dd;
 }
