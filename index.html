@@ -1,69 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="shorcut icon" type="x-icon" href="..//WorldClock/images/clock.png"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shorcut icon"
+      type="x-icon"
+      href="..//WorldClock/images/clock.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins:ital,wght@0,500;0,600;0,700;0,900;1,100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins:ital,wght@0,500;0,600;0,700;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
     <title>World Clock</title>
-</head>
-<body>
-<div class="container">
-    <div class="worldclock-app-wrapper">
+  </head>
+  <body>
+    <div class="container">
+      <div class="worldclock-app-wrapper">
         <h1>World TimeZones</h1>
         <div id="cities-dropdown">
-            <select name="" id="city">
-                <option value="">Choose your city</option>
-                <option value="current">📍Current City</option>
-                <option value="Asia/Tokyo">⛩️Tokyo</option>
-                <option value="Europe/Berlin">🐻Berlin</option>
-                <option value="America/Chicago">🌆Chicago</option>
-                <option value="Pacific/Honolulu">🌺Honolulu</option>
-            </select>
-        <br />
+          <select name="" id="city">
+            <option value="">Choose your city</option>
+            <option value="current">📍Current City</option>
+            <option value="Asia/Tokyo">⛩️Tokyo</option>
+            <option value="Europe/Berlin">🐻Berlin</option>
+            <option value="America/Chicago">🌆Chicago</option>
+            <option value="Pacific/Honolulu">🌺Honolulu</option>
+          </select>
+          <br />
         </div>
         <div id="cities">
-            <div class="card mx-auto" id= "berlin" style="width: 35rem;">
-                <span class="timezone">🐻Berlin</span>
-                    <div class="date"></div>
-                    <div class="time"></div>
-            </div>
-            <div class="card mx-auto" id= "tokyo" style="width: 35rem;">
-                <span class="timezone">⛩️Tokyo</span>
-                    <div class="date"></div>
-                    <div class="time"></div>
-            </div>
-            <div class="card mx-auto" id= "chicago" style="width: 35rem;">
-                <span class="timezone">🌆Chicago</span>
-                    <div class="date"></div>
-                    <div class="time"></div>
-            </div>
-            <div class="card mx-auto" id= "honolulu" style="width: 35rem;">
-                <span class="timezone">🌺Honolulu</span>
-                    <div class="date"></div>
-                    <div class="time"></div>
-            </div>
+          <div class="card mx-auto" id="berlin" style="width: 35rem">
+            <span class="timezone">🐻Berlin</span>
+            <div class="date"></div>
+            <div class="time"></div>
+          </div>
+          <div class="card mx-auto" id="tokyo" style="width: 35rem">
+            <span class="timezone">⛩️Tokyo</span>
+            <div class="date"></div>
+            <div class="time"></div>
+          </div>
+          <div class="card mx-auto" id="chicago" style="width: 35rem">
+            <span class="timezone">🌆Chicago</span>
+            <div class="date"></div>
+            <div class="time"></div>
+          </div>
+          <div class="card mx-auto" id="honolulu" style="width: 35rem">
+            <span class="timezone">🌺Honolulu</span>
+            <div class="date"></div>
+            <div class="time"></div>
+          </div>
         </div>
-   </div>   
-</div>
+      </div>
+    </div>
 
-<footer>
-    <p id="author">
-        Coded by 👩‍💻 <a href="https://www.instagram.com/kurylaky.coding">Maryluz</a>
-      and is Open-source code on 
-        <a href="https://github.com/maryluzmeva/WorldClock" target="_blank">GitHub</a> |
-      Hosting in <a href="https://kurylaky-worldclock.netlify.app">Netlify</a>
-    </p>
-</footer>
+    <footer>
+      <p id="author">
+        Coded by 👩‍💻
+        <a href="https://www.instagram.com/kurylaky.coding">Maryluz</a>
+        and is Open-source code on
+        <a href="https://github.com/maryluzmeva/WorldClock" target="_blank"
+          >GitHub</a
+        >
+        | Hosting in
+        <a href="https://kurylaky-worldclock.netlify.app">Netlify</a>
+      </p>
+    </footer>
 
-<script src="src/script.js"></script>
-
-</body>
+    <script src="src/script.js"></script>
+  </body>
 </html>
