@@ -102,7 +102,7 @@ max-width:700px;
   transition: ease-in;
   border: 5px outset rgba(15, 15, 15, 0.3);
   border-radius: 20px;
-  width: 40%;
+  width: 100%;
 }
 
 .card:hover {
