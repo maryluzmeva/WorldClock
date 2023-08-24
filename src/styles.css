@@ -73,6 +73,7 @@ p {
     padding: 15px;
     box-shadow: 5px 12px 42px 10px rgba(0, 0, 0, 0.2);
 }
+max-width:700px;
 
 #berlin {
   background:#062925;
@@ -101,7 +102,7 @@ p {
   transition: ease-in;
   border: 5px outset rgba(15, 15, 15, 0.3);
   border-radius: 20px;
-  width: 50%;
+  width: 40%;
 }
 
 .card:hover {
